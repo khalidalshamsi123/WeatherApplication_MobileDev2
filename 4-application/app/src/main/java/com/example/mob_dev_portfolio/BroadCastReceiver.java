@@ -25,7 +25,7 @@ public class BroadCastReceiver extends BroadcastReceiver {
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int minute = calendar.get(Calendar.MINUTE);
 
-        if(hour == 12 && minute == 29){
+        if(hour == 16 && minute == 15){
             NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -37,8 +37,8 @@ public class BroadCastReceiver extends BroadcastReceiver {
             }
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context, MainActivity.channelID)
                     .setSmallIcon(R.drawable.ic_water)
-                    .setContentTitle("Tree APp")
-                    .setContentText("Reminder: it's 4pm!")
+                    .setContentTitle("Water your plants!")
+                    .setContentText("Reminder: it's 4pm! Time to water your plants")
                     .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
             notificationManager.notify(0, builder.build());
