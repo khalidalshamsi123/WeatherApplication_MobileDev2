@@ -188,7 +188,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/marqueeText"
+            android:id="@+id/marqueeText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
@@ -196,11 +196,11 @@
             android:padding="30dp"
             android:scrollHorizontally="true"
             android:singleLine="true"
-            android:text="Dont forget to water your plants today... :)"
+            android:text="Weather conditions are suitable for your plants... :)"
             android:textSize="24sp"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="34dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="95dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/page_button"

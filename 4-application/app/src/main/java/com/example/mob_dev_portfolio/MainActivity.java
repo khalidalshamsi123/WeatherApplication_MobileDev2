@@ -373,28 +373,6 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    protected void notificationCreation(){
-        // create a notification builder
-        NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
-
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-
-            if(notificationManager != null && notificationManager.getNotificationChannel(channelID) == null){
-                NotificationChannel channel = new NotificationChannel(channelID,"example_channel",NotificationManager.IMPORTANCE_DEFAULT);
-                channel.setDescription("example notification");
-                notificationManager.createNotificationChannel(channel);
-            }
-        }
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), channelID)
-                .setSmallIcon(R.drawable.ic_water)
-                .setContentTitle(getString(R.string.notification_title))
-                .setContentText(getString(R.string.notification_text))
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-
-        // show the notification
-        Notification notificationCompat = builder.build();
-        notificationManager.notify(1, builder.build());
-    }
 
     public void reset(Context context){
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);

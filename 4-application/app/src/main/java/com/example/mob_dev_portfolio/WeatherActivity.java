@@ -73,7 +73,8 @@ public class WeatherActivity extends AppCompatActivity {
         Log.e("lat : ", String.valueOf(lat));
         Log.e("lon : ", String.valueOf(lon));
 
-        binding.marqueeText.setSelected(true);
+
+        binding.marqueeText2.setSelected(true);
     }
 
     public void getCurrentLocation() {
@@ -172,6 +173,12 @@ public class WeatherActivity extends AppCompatActivity {
                         Picasso.get().load("https://openweathermap.org/img/wn/" + icon + "@2x.png")
                                 .placeholder(R.drawable.ic_cloud).into(binding.imageView);
 
+
+                        double windSpeed = Double.parseDouble(wind);
+
+                        if(windSpeed > 20.0 ){
+                            binding.marqueeText2.setText("Weather is not suitable for your plants, get them inside!");
+                        }
 
                     }
                 },
