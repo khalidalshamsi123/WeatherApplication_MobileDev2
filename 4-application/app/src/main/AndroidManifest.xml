@@ -35,6 +35,14 @@
                 <action android:name="android.intent.action.TIME_TICK" />
             </intent-filter>
         </receiver>
+
+        <receiver
+            android:name=".MidnightReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

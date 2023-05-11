@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         binding.resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                reset();
+                reset(MainActivity.this);
             }
         });
 
@@ -396,8 +396,8 @@ public class MainActivity extends AppCompatActivity {
         notificationManager.notify(1, builder.build());
     }
 
-    public void reset(){
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+    public void reset(Context context){
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         binding.progressBar.setProgress(0);
         updateProgressText(0);

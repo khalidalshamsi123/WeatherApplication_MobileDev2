@@ -15,8 +15,8 @@ public class MidnightReceiver extends BroadCastReceiver {
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int minute = calendar.get(Calendar.MINUTE);
 
-        if(hour == 12 && minute == 22){
-            mainActivity.reset();
+        if(hour == 12 && minute == 15){
+            mainActivity.reset(context);
         }
     }
 }
