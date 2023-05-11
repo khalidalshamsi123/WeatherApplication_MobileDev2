@@ -5,9 +5,7 @@ Student ID: `c21086065`
 
 _Complete the information above and then write your 200 word overview below.__
 
-i will make an application that assists the user to take care of their plants.
-the project will allow the user to list a number of plants. With this it will remind the user on adaily basis
-to water the plants.
-there will also be two tabs that share weather and polution information, which will
-be done with the use of APIs, this will be done by extracting the user's location.
- this is done to check if the conditions are well for the plants.
+I myself like to buy small plants but I have the tendency to forget to water them. Because of this, will make an application that assists the user to take car of their plants. It will assist them by reminding them to water their plants and provide weather information that will them keep a tab on whether its suitable for the plants to be outdoor or indoor. The project allows the user to list a number of plants with a checkbox near the tree name that the user could check everyday as an indication they watered their plants. As they check each plant a progress bar will be filled which is another indication that they have watered all their plants.
+The application will send a notification everyday at 4pm to remind them water their plants, this is done through normal app notification.
+As mentioned before, there will be a weather page to provide the user with weather conditions and tells them if it is suitable for the plants to be indoor or outdoor. The weather information is provided with the OpenWeather API. In order to get what the weather is for their specific location, the app will extract the location from the device, with granted permission that is.
+
