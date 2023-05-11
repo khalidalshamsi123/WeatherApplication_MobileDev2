@@ -25,6 +25,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.mob_dev_portfolio.databinding.ActivityMainBinding;
 
@@ -84,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        binding.helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "For accurate progression, press reset after adding/deleting a tree if there were checked trees", Toast.LENGTH_SHORT).show();
             }
         });
 
