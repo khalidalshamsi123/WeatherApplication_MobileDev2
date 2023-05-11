@@ -8,8 +8,10 @@ _Complete the information above and then enumerate your functional and non funct
 
 2- The progress bar fills up as the checkboxes are checked.
 
-3- A simple colour scheme that could distingiuish between the two pages.
+3- A simple colour scheme that could distinguish between the two pages.
 
 4- After creating the checkboxes, the user is allowed to edit and delete them.
 
 5- Weather page should be simplistic, shouldnt be too detailed.
+
+6- the application should notify the user to water their plants when its 4pm.
