@@ -4,6 +4,7 @@
 Student ID: `c21086065`
 
 _Complete the information above and then enumerate your functional and non functional requirements below.__
+
 1- When the user grants the application to the user their location, the weather then should be displayed.
 
 2- The progress bar fills up as the checkboxes are checked.
