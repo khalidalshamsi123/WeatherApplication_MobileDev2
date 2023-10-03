@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         binding.helpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "For accurate progression, press reset after adding/deleting a tree if there were checked trees", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "For accurate progression, press reset after adding/deleting a tree if there were checked trees, or give us a call on 07357676", Toast.LENGTH_SHORT).show();
             }
         });
 
